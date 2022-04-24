@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="first">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="AladinPageTest">
+                    <methods>
+                        <include name="aladinPageTest"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="second">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="BackToHomePageTest">
+                    <methods>
+                        <include name="BackToHomePageTest"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="third">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="HomePageTest">
+                    <methods>
+                        <include name="newsAndEventsPageTest"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="forth">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="SeriePageTest">
+                    <methods>
+                        <include name="aladinPageTest"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+</suite>
